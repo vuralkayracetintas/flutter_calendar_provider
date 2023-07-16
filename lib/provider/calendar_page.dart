@@ -228,19 +228,10 @@ class _CalendarPageState extends State<CalendarPage> {
                       String description = _descriptionController.text;
                       DateTime selectedDate = _selectedDate;
 
-                      if (title.isNotEmpty) {
-                        Event event = Event(
-                          title: title,
-                          description: description,
-                          date: selectedDate,
-                        );
+                      EventProvider eventProvider =
+                          Provider.of<EventProvider>(context, listen: false);
 
-                        if (selectedEvents.containsKey(selectedDate)) {
-                          selectedEvents[selectedDate]!.add(event);
-                        } else {
-                          selectedEvents[selectedDate] = [event];
-                        }
-                      }
+                      eventProvider.addEvent(title, description, selectedDate);
 
                       _titleController.clear();
                       _descriptionController.clear();
