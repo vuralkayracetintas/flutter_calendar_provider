@@ -19,8 +19,7 @@ class _SplachScreenState extends State<SplachScreen> {
     // TODO: implement initState
     super.initState();
     Timer(const Duration(seconds: 5), () {
-      // Navigator.of(context)
-      //     .pushReplacement(MaterialPageRoute(builder: (_) => LoginPage()));
+      // add navigation to
     });
 
     Future.delayed(const Duration(seconds: 1), () {
@@ -59,7 +58,7 @@ class _SplachScreenState extends State<SplachScreen> {
               //akademilogo
               const SizedBox(height: 60),
               Text(
-                'OYUN VE UYGULAMA AKADEMİSİNE HOŞ \nGELDİN 🚀🚀',
+                'TEXT AREA 🚀🚀',
                 style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                     color: Colors.white,
                     fontSize: 28,
@@ -98,9 +97,9 @@ class _SplachScreenState extends State<SplachScreen> {
                   ),
                   child: AnimatedTextKit(
                     animatedTexts: [
-                      TyperAnimatedText('Istedigin yerde'),
-                      TyperAnimatedText('istedigin zaman,'),
-                      TyperAnimatedText('ozgurce calis'),
+                      TyperAnimatedText('xxxxxxxxx'),
+                      TyperAnimatedText('xxxxxxxxx,'),
+                      TyperAnimatedText('xxxxxxxxx'),
                       ColorizeAnimatedText(
                         speed: const Duration(milliseconds: 500),
                         'StudyOn',
