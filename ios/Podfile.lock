@@ -1,29 +1,61 @@
 PODS:
   - Flutter (1.0.0)
+  - flutter_ffmpeg (0.4.2):
+    - Flutter
+    - flutter_ffmpeg/https (= 0.4.2)
+  - flutter_ffmpeg/https (0.4.2):
+    - Flutter
+    - mobile-ffmpeg-https (= 4.4)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - mobile-ffmpeg-https (4.4)
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
   - share (0.0.1):
     - Flutter
+  - Toast (4.0.0)
+  - video_player_avfoundation (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - flutter_ffmpeg (from `.symlinks/plugins/flutter_ffmpeg/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - share (from `.symlinks/plugins/share/ios`)
+  - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/ios`)
+
+SPEC REPOS:
+  trunk:
+    - mobile-ffmpeg-https
+    - Toast
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  flutter_ffmpeg:
+    :path: ".symlinks/plugins/flutter_ffmpeg/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
   share:
     :path: ".symlinks/plugins/share/ios"
+  video_player_avfoundation:
+    :path: ".symlinks/plugins/video_player_avfoundation/ios"
 
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_ffmpeg: 3ec3912c74649851e6c3b1885511eef78142ac4f
+  fluttertoast: fafc4fa4d01a6a9e4f772ecd190ffa525e9e2d9c
+  mobile-ffmpeg-https: 311fc4a8f671cf36d1d6b8f421e8246b790978d9
   path_provider_foundation: eaf5b3e458fc0e5fbb9940fb09980e853fe058b8
   share: 0b2c3e82132f5888bccca3351c504d0003b3b410
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  video_player_avfoundation: 81e49bb3d9fb63dccf9fa0f6d877dc3ddbeac126
 
 PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
