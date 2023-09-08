@@ -1,6 +1,5 @@
-import 'package:demo_apps/login_pages/login_screen_ui_2.dart';
+import 'package:demo_apps/bottomSheet/bottom_sheet_view.dart';
 import 'package:demo_apps/provider/event_provider.dart';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -18,10 +17,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(useMaterial3: true),
       title: 'My App',
-      home: LoginPage(),
+      home: BottomSheetView(),
     );
   }
 }

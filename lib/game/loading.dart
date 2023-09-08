@@ -22,7 +22,7 @@ class _SplashScreenoyunState extends State<SplashScreenoyun> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
@@ -30,17 +30,17 @@ class _SplashScreenoyunState extends State<SplashScreenoyun> {
           children: [
             // logo here
 
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
-            const CircularProgressIndicator(
+            CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.deepPurple),
             ),
-            const SizedBox(
+            SizedBox(
               height: 200,
             ),
-            const Text(
-              "Yıllık Eğitim Maliyetini %70 İndir!",
+            Text(
+              "x",
               style: TextStyle(
                   fontWeight: FontWeight.w500, color: Colors.red, fontSize: 16),
             ),
