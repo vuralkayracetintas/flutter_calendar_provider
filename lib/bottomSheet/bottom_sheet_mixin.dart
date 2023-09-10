@@ -14,6 +14,6 @@ mixin BottomSheetMixin on State<BottomSheetView> {
   Future<void> showBottomSheetFunction() async {
     final response = await TextBottomSheet.show(context);
     if (response == null) return;
-    titleNotifier.value = response;
+    titleNotifier.value = response.value;
   }
 }
