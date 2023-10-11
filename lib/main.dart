@@ -1,3 +1,4 @@
+import 'package:demo_apps/page_controller/page_controller_view.dart';
 import 'package:demo_apps/provider/event_provider.dart';
 import 'package:demo_apps/qrcode/qrcode_scanner.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
       title: 'My App',
-      home: QrCodeScanner(),
+      home: MyForm(),
     );
   }
 }
