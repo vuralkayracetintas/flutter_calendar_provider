@@ -29,76 +29,82 @@ class SingleChildButton extends StatelessWidget {
       // ),
       // bottomNavigationBar: Eleva,
       appBar: AppBar(),
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-            Text(
-              'text',
-              style: context.general.textTheme.displayLarge,
-            ),
-          ],
-        ),
+      // body: SingleChildScrollView(
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.center,
+      //     children: [
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //       Text(
+      //         'text',
+      //         style: context.general.textTheme.displayLarge,
+      //       ),
+      //     ],
+      //   ),
+      // ),
+      body: ListView.builder(
+        itemCount: 200,
+        itemBuilder: (BuildContext context, int index) {
+          return const Text('text');
+        },
       ),
     );
   }
