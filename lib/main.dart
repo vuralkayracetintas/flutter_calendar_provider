@@ -1,4 +1,9 @@
 import 'package:demo_apps/animation/lotie_demo.dart';
+import 'package:demo_apps/animation/orbit_animation/orbit_2.dart';
+import 'package:demo_apps/animation/orbit_animation/orbit_3.dart';
+import 'package:demo_apps/animation/orbit_animation/orbit_4.dart';
+
+import 'package:demo_apps/animation/orbit_animation/orbit_animation.dart';
 import 'package:demo_apps/page_controller/page_controller_view.dart';
 import 'package:demo_apps/provider/event_provider.dart';
 import 'package:demo_apps/qrcode/qrcode_scanner.dart';
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
       title: 'My App',
-      home: LottieDemo(),
+      home: OrbitDemo3(),
     );
   }
 }
