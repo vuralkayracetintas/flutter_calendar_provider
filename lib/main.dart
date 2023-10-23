@@ -1,4 +1,5 @@
-import 'package:demo_apps/getx_learn/getx_main.dart';
+import 'package:demo_apps/getx_learn/getx_showDialog.dart';
+import 'package:demo_apps/getx_learn/getx_snackbar.dart';
 import 'package:demo_apps/provider/event_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
       title: 'My App',
-      home: GetxSnackbar(),
+      home: GetxShowDialog(),
     );
   }
 }
