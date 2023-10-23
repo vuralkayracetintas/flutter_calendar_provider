@@ -1,7 +1,6 @@
 import 'package:demo_apps/animation/lotie_demo.dart';
-import 'package:demo_apps/animation/orbit_animation/orbit_2.dart';
-import 'package:demo_apps/animation/orbit_animation/orbit_3.dart';
-import 'package:demo_apps/animation/orbit_animation/orbit_4.dart';
+
+import 'package:demo_apps/animation/orbit_animation/orbit.dart';
 
 import 'package:demo_apps/animation/orbit_animation/orbit_animation.dart';
 import 'package:demo_apps/page_controller/page_controller_view.dart';
