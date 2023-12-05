@@ -129,6 +129,9 @@
 				331C8082294A63A400263BE5 /* RunnerTests */,
 				2C06EC31B46FF86CE41148AD /* Pods */,
 				D7B59CB002C8B67BC9FAC37D /* Frameworks */,
+				A2F64047BF80911E18A7D231 /* xcuserdata */,
+				A2F64A9673FFE27825D96194 /* vuralkayracetintas.xcuserdatad */,
+				A2F6466DA58E9E04AE29817F /* .symlinks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +157,61 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		A2F64047BF80911E18A7D231 /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				A2F6405543309AFD9AA902B5 /* vuralkayracetintas.xcuserdatad */,
+			);
+			name = xcuserdata;
+			path = Runner.xcworkspace/xcuserdata;
+			sourceTree = "<group>";
+		};
+		A2F6405543309AFD9AA902B5 /* vuralkayracetintas.xcuserdatad */ = {
+			isa = PBXGroup;
+			children = (
+				A2F64E40FE05A8B001EA8C83 /* xcschemes */,
+			);
+			path = vuralkayracetintas.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		A2F6423FAA5A534687FFD169 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		A2F6466DA58E9E04AE29817F /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				A2F6423FAA5A534687FFD169 /* plugins */,
+			);
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		A2F649F8233A699055F65DD0 /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xcschemes;
+			sourceTree = "<group>";
+		};
+		A2F64A9673FFE27825D96194 /* vuralkayracetintas.xcuserdatad */ = {
+			isa = PBXGroup;
+			children = (
+				A2F649F8233A699055F65DD0 /* xcschemes */,
+			);
+			name = vuralkayracetintas.xcuserdatad;
+			path = Runner.xcodeproj/xcuserdata/vuralkayracetintas.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		A2F64E40FE05A8B001EA8C83 /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xcschemes;
 			sourceTree = "<group>";
 		};
 		D7B59CB002C8B67BC9FAC37D /* Frameworks */ = {
@@ -199,6 +257,7 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				06978AD2FE47AB244D650287 /* [CP] Embed Pods Frameworks */,
+				D9D9AF205B92F02496B83E09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,6 +418,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9D9AF205B92F02496B83E09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

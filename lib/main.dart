@@ -1,12 +1,16 @@
+import 'package:demo_apps/admob/admob_view.dart';
 import 'package:demo_apps/getx_learn/getx_bottomSheet.dart';
 import 'package:demo_apps/getx_learn/getx_showDialog.dart';
 import 'package:demo_apps/getx_learn/getx_snackbar.dart';
 import 'package:demo_apps/provider/event_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   runApp(
     ChangeNotifierProvider(
       create: (context) => EventProvider(),
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
       title: 'My App',
-      home: GetxBottomSheet(),
+      home: GoogleAdMobTest(),
     );
   }
 }
