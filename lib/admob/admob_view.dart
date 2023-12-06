@@ -37,7 +37,7 @@ class GoogleAdMobTest extends StatelessWidget {
                 color: Colors.red,
               ),
             if (googleAds.bannerAd2 != null)
-              Container(
+              SizedBox(
                 width: googleAds.bannerAd2!.size.width.toDouble(),
                 height: googleAds.bannerAd2!.size.height.toDouble(),
                 child: AdWidget(ad: googleAds.bannerAd2!),

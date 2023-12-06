@@ -5,7 +5,7 @@ class AdHelper {
     if (Platform.isAndroid) {
       return '<YOUR TEST CODE>';
     } else if (Platform.isIOS) {
-      return '<YOUR TEST CODE>';
+      return 'ca-app-pub-3940256099942544/2934735716';
     } else {
       throw UnsupportedError('Unsupported platform');
     }
@@ -15,7 +15,7 @@ class AdHelper {
     if (Platform.isAndroid) {
       return '<YOUR TEST CODE>';
     } else if (Platform.isIOS) {
-      return '<YOUR TEST CODE>';
+      return 'ca-app-pub-3940256099942544/2934735716';
     } else {
       throw UnsupportedError('Unsupported platform');
     }
