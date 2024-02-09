@@ -57,6 +57,7 @@ dependencies:
   dio: ^5.4.0
   syncfusion_flutter_pdfviewer: ^24.1.47
   scrollable_clean_calendar: ^1.4.1
+  calendar_date_picker2: ^0.5.3
 
 dev_dependencies:
   flutter_test:

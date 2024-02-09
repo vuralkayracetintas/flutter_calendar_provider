@@ -1,4 +1,3 @@
-import 'package:cr_calendar/cr_calendar.dart';
 import 'package:flutter/material.dart';
 import 'package:scrollable_clean_calendar/controllers/clean_calendar_controller.dart';
 import 'package:scrollable_clean_calendar/scrollable_clean_calendar.dart';
@@ -13,7 +12,7 @@ class CalendarView extends StatefulWidget {
 
 class _CalendarViewState extends State<CalendarView> {
   late CleanCalendarController calendarController;
-  String selectedDateText = 'No date selected';
+  String selectedDateText = 'No date selected'; 
 
   @override
   void initState() {
