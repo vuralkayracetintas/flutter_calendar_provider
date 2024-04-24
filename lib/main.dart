@@ -1,19 +1,14 @@
-import 'package:demo_apps/admob/admob_view.dart';
-import 'package:demo_apps/calendar/calendar_view.dart';
-import 'package:demo_apps/download_pdf.dart';
-import 'package:demo_apps/getx_learn/getx_bottomSheet.dart';
-import 'package:demo_apps/getx_learn/getx_showDialog.dart';
-import 'package:demo_apps/getx_learn/getx_snackbar.dart';
-import 'package:demo_apps/go_router/router.dart';
-import 'package:demo_apps/listview_card.dart';
+import 'package:demo_apps/bloc/image_picker_bloc.dart';
+import 'package:demo_apps/cosmos/cosmos_package_ex.dart';
+import 'package:demo_apps/keyguard.dart';
 import 'package:demo_apps/provider/event_provider.dart';
-import 'package:demo_apps/select_watch.dart';
-import 'package:demo_apps/sliver.dart';
 import 'package:demo_apps/textfield/textfield_view.dart';
+import 'package:demo_apps/textformfield/textformfield_control.dart';
+import 'package:demo_apps/utils/image_picker_utils.dart';
+import 'package:demo_apps/vpn.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/route_manager.dart';
-import 'package:go_router/go_router.dart';
-
 import 'package:provider/provider.dart';
 
 void main() {
@@ -32,12 +27,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(useMaterial3: true),
-      title: 'My App',
-      home: CalendarView(),
-    );
+    return MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (_) => ImagePickerBloc(ImagePickerUtils()))
+        ],
+        child: GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData.dark(useMaterial3: true),
+          title: 'My App',
+          home: TextFormFieldDemo(),
+          // home: KeyGuard(),
+        ));
 
     // return MaterialApp.router(
     //   routerConfig: router,
@@ -45,27 +45,115 @@ class MyApp extends StatelessWidget {
   }
 }
 
-final GoRouter router = GoRouter(
-  routes: <RouteBase>[
-    GoRoute(
-      path: '/',
-      builder: (BuildContext context, GoRouterState state) {
-        return const HomeScreen();
-      },
-      routes: <RouteBase>[
-        GoRoute(
-          path: 'details',
-          builder: (BuildContext context, GoRouterState state) {
-            return const DetailsScreen();
-          },
+// final GoRouter router = GoRouter(
+//   routes: <RouteBase>[
+//     GoRoute(
+//       path: '/',
+//       builder: (BuildContext context, GoRouterState state) {
+//         return const CharView();
+//       },
+//       routes: <RouteBase>[
+//         GoRoute(
+//           path: 'details',
+//           builder: (BuildContext context, GoRouterState state) {
+//             return DetailsScreen();
+//           },
+//         ),
+//         GoRoute(
+//           path: 'myWidget',
+//           builder: (BuildContext context, GoRouterState state) {
+//             return MyWidget();
+//           },
+//         ),
+//       ],
+//     ),
+//   ],
+// );
+
+class App extends StatefulWidget {
+  App({Key? key}) : super(key: key);
+  _AppState createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  late PageController _myPage;
+  var selectedPage;
+
+  @override
+  void initState() {
+    super.initState();
+    _myPage = PageController(initialPage: 1);
+    selectedPage = 1;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: PageView(
+          physics: const NeverScrollableScrollPhysics(),
+          controller: _myPage,
+          children: <Widget>[
+            const Center(
+              child: Text("Another Page"),
+            ),
+            Center(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                const Text("Page 1"),
+                ElevatedButton(
+                  onPressed: () {
+                    _myPage.jumpToPage(0);
+                    setState(() {
+                      selectedPage = 0;
+                    });
+                  },
+                  child: const Text("Go to another page"),
+                )
+              ],
+            )),
+            const Center(child: Text("Page 2")),
+            const Center(child: Text("Page 3")),
+          ],
         ),
-        GoRoute(
-          path: 'details',
-          builder: (BuildContext context, GoRouterState state) {
-            return const DetailsScreen();
-          },
-        ),
-      ],
-    ),
-  ],
-);
+        bottomNavigationBar: BottomAppBar(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              IconButton(
+                icon: const Icon(Icons.home),
+                color: selectedPage == 1 ? Colors.blue : Colors.grey,
+                onPressed: () {
+                  _myPage.jumpToPage(1);
+                  setState(() {
+                    selectedPage = 1;
+                  });
+                },
+              ),
+              IconButton(
+                icon: const Icon(Icons.star),
+                color: selectedPage == 2 ? Colors.blue : Colors.grey,
+                onPressed: () {
+                  _myPage.jumpToPage(2);
+                  setState(() {
+                    selectedPage = 2;
+                  });
+                },
+              ),
+              IconButton(
+                icon: const Icon(
+                  Icons.settings,
+                ),
+                color: selectedPage == 3 ? Colors.blue : Colors.grey,
+                onPressed: () {
+                  _myPage.jumpToPage(3);
+                  setState(() {
+                    selectedPage = 3;
+                  });
+                },
+              ),
+            ],
+          ),
+        ));
+  }
+}

@@ -54,7 +54,7 @@ class _TextBottomSheetState extends State<TextBottomSheet> with _TextMixin {
   }
 }
 
-final class TextBottomModel {
+class TextBottomModel {
   final String value;
   final bool isCheck;
 
