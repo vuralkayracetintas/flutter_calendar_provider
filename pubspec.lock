@@ -461,6 +461,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
   get:
     dependency: "direct main"
     description:
@@ -573,6 +581,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.7"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      sha256: "1ce844379ca14835a50d2f019a3099f419082cfdd231cd86a142af94dd5c6bb1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.9.0"
   kartal:
     dependency: "direct main"
     description:
@@ -717,6 +733,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.2"
+  overflow_view:
+    dependency: "direct main"
+    description:
+      name: overflow_view
+      sha256: "46741be6ccc3d10ac4e14907c1a0e1799857ac4bbea8a485ac803e32637cc326"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.1"
   package_info_plus:
     dependency: transitive
     description:
@@ -885,6 +909,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.5"
+  purchases_flutter:
+    dependency: "direct main"
+    description:
+      name: purchases_flutter
+      sha256: c119839d22e93875c7ab52b1ac881171000868682986e031705add5c966383a5
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.28.0"
   qr:
     dependency: transitive
     description:
@@ -1282,6 +1314,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.3.3"
+  value_layout_builder:
+    dependency: transitive
+    description:
+      name: value_layout_builder
+      sha256: "98202ec1807e94ac72725b7f0d15027afde513c55c69ff3f41bcfccb950831bc"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.1"
   vector_math:
     dependency: transitive
     description:
